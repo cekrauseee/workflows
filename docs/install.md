@@ -30,4 +30,4 @@ A Codex marketplace entry can be created later through the host's plugin managem
 
 After installation, start a fresh agent session when needed for discovery and confirm the six selected names and descriptions. To check an independent copy, run its helper with `--help`; then perform a relevant read-only validation, such as checking a commit message or listing the worktree plan.
 
-Update the installed package through the same route that installed it. Existing installations of the old Harness workflow names are separate and may remain discoverable until removed; see [migration](migration.md). No updater here deletes host state or manages installed plugin caches.
+Update the installed package through the same route that installed it. Remove a separately installed copy through that route before switching installation methods, so the host discovers only one copy of each skill. No updater here deletes host state or manages installed plugin caches.

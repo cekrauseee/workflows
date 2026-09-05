@@ -36,6 +36,6 @@ Use $workflow-docs to update the setup guide after this change.
 
 English and Conventional Commits are preferences. Git-valid host prefixes such as `codex/` work, PR types need not match branch types, and existing PR templates and documentation layouts are preserved. A review remains read-only unless implementation is also requested. HTML is produced only when useful within the requested work.
 
-Read [technical contracts and tests](docs/technical.md), [migration from Harness workflows](docs/migration.md), and [optional Harness integration](docs/harness-integration.md). [Publication preparation](docs/publication.md) contains repository metadata and release checks; nothing here publishes automatically.
+Read [technical contracts and tests](docs/technical.md), [installation](docs/install.md), and [optional Harness integration](docs/harness-integration.md). [Publication preparation](docs/publication.md) contains repository metadata and release checks; nothing here publishes automatically.
 
 MIT licensed, copyright 2026 Henrique Krause. See [LICENSE](LICENSE).
