@@ -1,0 +1,34 @@
+{
+  "name": "workflows",
+  "version": "0.1.0",
+  "description": "Portable engineering workflows for Git, reviews, documentation, and HTML artifacts.",
+  "author": {
+    "name": "Henrique Krause",
+    "url": "https://github.com/cekrauseee"
+  },
+  "license": "MIT",
+  "keywords": [
+    "agents",
+    "workflows",
+    "git",
+    "reviews",
+    "documentation",
+    "skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Workflows",
+    "shortDescription": "Portable Git, review, and documentation workflows.",
+    "longDescription": "Six focused skills for worktrees, commits, pull requests, read-only reviews, project documentation, and self-contained HTML artifacts. Install together or independently; Harness continuity is optional.",
+    "developerName": "Henrique Krause",
+    "category": "Productivity",
+    "capabilities": [
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Prepare a cohesive commit from these changes.",
+      "Draft a pull request from the actual diff.",
+      "Review this change for actionable defects."
+    ]
+  }
+}

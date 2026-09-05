@@ -1,0 +1,4 @@
+interface:
+  display_name: "Documentation"
+  short_description: "Create, maintain, and audit project documentation"
+  default_prompt: "Use $workflow-docs to update the affected project documentation."
