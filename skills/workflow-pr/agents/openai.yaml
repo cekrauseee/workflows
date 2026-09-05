@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pull request"
+  short_description: "Draft pull requests from verified change evidence"
+  default_prompt: "Use $workflow-pr to draft a pull request from the complete diff."

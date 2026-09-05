@@ -1,0 +1,4 @@
+interface:
+  display_name: "Commit"
+  short_description: "Prepare cohesive commits from the actual diff"
+  default_prompt: "Use $workflow-commit to prepare commits for the verified changes."

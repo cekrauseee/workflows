@@ -1,0 +1,18 @@
+{
+  "name": "workflows",
+  "version": "0.1.0",
+  "description": "Portable engineering workflows for Git, reviews, documentation, and HTML artifacts.",
+  "author": {
+    "name": "Henrique Krause",
+    "url": "https://github.com/cekrauseee"
+  },
+  "license": "MIT",
+  "skills": [
+    "./skills/workflow-worktree",
+    "./skills/workflow-commit",
+    "./skills/workflow-pr",
+    "./skills/workflow-review",
+    "./skills/workflow-docs",
+    "./skills/workflow-artifact"
+  ]
+}
