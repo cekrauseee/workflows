@@ -13,16 +13,16 @@ Workflows gives an agent a focused procedure and concrete completion evidence. I
 | [workflow-docs](skills/workflow-docs/SKILL.md) | Created, maintained, or audited developer documentation |
 | [workflow-artifact](skills/workflow-artifact/SKILL.md) | A self-contained HTML explanation or report |
 
-## Install locally
+## Install
 
-From this repository:
+Install from the public repository:
 
 ```bash
-npx skills add . --list
-npx skills add . --skill workflow-review --agent codex
+npx skills add cekrauseee/workflows --list
+npx skills add cekrauseee/workflows --skill '*' --global -a codex -a claude-code -y
 ```
 
-Select the skills and agent you need. For agent-specific plugin loading, independent directory copies, and verification, see [installation](docs/install.md). This source checkout is local; no remote repository or published marketplace is assumed.
+Select the skills and agent you need. For agent-specific plugin loading, independent directory copies, and verification, see [installation](docs/install.md). Replace `cekrauseee/workflows` with `.` to test a local checkout.
 
 ## Use
 
@@ -36,6 +36,6 @@ Use $workflow-docs to update the setup guide after this change.
 
 English and Conventional Commits are preferences. Git-valid host prefixes such as `codex/` work, PR types need not match branch types, and existing PR templates and documentation layouts are preserved. A review remains read-only unless implementation is also requested. HTML is produced only when useful within the requested work.
 
-Read [technical contracts and tests](docs/technical.md), [migration from Harness workflows](docs/migration.md), and [optional Harness integration](docs/harness-integration.md). [Publication preparation](docs/publication.md) contains local metadata drafts and release checks; nothing here publishes automatically.
+Read [technical contracts and tests](docs/technical.md), [migration from Harness workflows](docs/migration.md), and [optional Harness integration](docs/harness-integration.md). [Publication preparation](docs/publication.md) contains repository metadata and release checks; nothing here publishes automatically.
 
 MIT licensed, copyright 2026 Henrique Krause. See [LICENSE](LICENSE).

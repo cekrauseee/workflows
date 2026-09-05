@@ -29,6 +29,9 @@
       "Prepare a cohesive commit from these changes.",
       "Draft a pull request from the actual diff.",
       "Review this change for actionable defects."
-    ]
-  }
+    ],
+    "websiteURL": "https://github.com/cekrauseee/workflows"
+  },
+  "homepage": "https://github.com/cekrauseee/workflows",
+  "repository": "https://github.com/cekrauseee/workflows"
 }
