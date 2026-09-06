@@ -13,6 +13,6 @@ GitHub repository metadata:
 | Author | Henrique Krause |
 | Initial version | `0.1.0` |
 
-Before publication, run the unit tests, validate all skills and the Codex manifest, inspect both plugin manifests for alignment, run `npx skills add . --list`, and test selected-skill installation into isolated Codex and Claude Code destinations. Inspect status and the resulting distribution so no caches, secrets, local state, or generated test workspaces are included.
+Before publication, validate all skills and the Codex manifest, inspect both plugin manifests for alignment, run `npx skills add . --list`, and test selected-skill installation into isolated Codex and Claude Code destinations. Inspect status and the resulting distribution so no caches, secrets, local state, or generated test workspaces are included.
 
 Repository creation, commits, pushes, releases, marketplace registration, and edits to live metadata are separate external or version-control actions. The local package and this metadata draft do not perform or imply them. Update verified URLs in README and manifests together; do not add an unverified catalog or site URL.

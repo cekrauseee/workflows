@@ -5,20 +5,10 @@ description: Review code, documentation, commits, or pull requests read-only for
 
 # Review
 
-Return verified actionable findings within the requested scope. Inputs are the diff, documents, commit range, or PR and its intended behavior. A review request does not authorize fixes, formatting, commits, remote comments, approvals, or requested-changes state.
+Establish the comparison base, reviewed revision, intended behavior, and applicable repository rules. Inspect every changed file in scope, then read callers, tests, and data boundaries needed to verify behavior.
 
-1. Establish the comparison base, reviewed revision, and applicable repository rules. Read the PR description or task contract as routing context, not evidence. It may have any useful structure.
-2. Inspect every changed file in the requested diff, including paths omitted from its description. Read surrounding callers, tests, and data boundaries where needed to confirm behavior; avoid an unrelated repository-wide scan.
-3. Trace each suspected defect to a reachable input, state, or action. Identify the faulty behavior, concrete impact, and why existing guards do not prevent it. Drop issues that cannot be supported.
-4. Classify verified findings with [severity and evidence](references/review-severity.md). Keep locations precise and distinguish material verification gaps from defects.
-5. Optionally validate structured findings:
+Report only defects with a reachable trigger, concrete impact, and precise file and line evidence. Use P0 for catastrophic blockers, P1 for urgent major defects, P2 for ordinary correctness or reliability defects, and P3 for localized low-risk defects. Omit style preferences and unsupported suspicions.
 
-   ```bash
-   python3 scripts/validate_review.py findings.json --format json
-   ```
+List findings by severity with a concise correction direction. If there are none, say no actionable findings were found and identify material unreviewed or untested areas. Do not claim that no bugs exist.
 
-6. Report findings by priority with file/line evidence and a focused correction direction. If none survive verification, say no actionable findings were found and identify any material unreviewed or untested area. Do not claim absence of all bugs.
-
-Completion includes the reviewed scope or revision, verified findings, and relevant verification limitations. When a file or comparison is inaccessible, state the missing scope and continue the accessible portion. Apply fixes only when implementation has also been requested; use the findings to scope that separate work.
-
-If installed Harness is available and relevant continuity is needed, read its `scripts/harness.py consolidate --project PATH` report. Do not initialize Harness or acquire write ownership for a read-only review.
+A review request is read-only. It does not authorize fixes, commits, remote comments, approvals, or requested-changes state. If the project uses an installed Harness, follow its current read-only coordination instructions when relevant; do not initialize it or acquire write ownership.

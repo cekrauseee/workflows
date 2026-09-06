@@ -1,6 +1,6 @@
 {
   "name": "workflows",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Portable engineering workflows for Git, reviews, documentation, and HTML artifacts.",
   "author": {
     "name": "Henrique Krause",
