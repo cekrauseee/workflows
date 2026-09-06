@@ -1,0 +1,4 @@
+interface:
+  display_name: "Orchestrate"
+  short_description: "Coordinate scoped agents with economical context"
+  default_prompt: "Use $workflow-orchestrate to delegate this work with explicit model choices and minimal context."

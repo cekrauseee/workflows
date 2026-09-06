@@ -22,12 +22,12 @@ Do not copy just `SKILL.md`, and do not merge new files over an unrelated same-n
 
 ## Plugin loading
 
-Codex discovers `.codex-plugin/plugin.json`; Claude Code discovers `.claude-plugin/plugin.json`. Both describe the same six skills. This checkout contains no marketplace registration or hooks. Load it through the host's supported local plugin flow. For a temporary Claude Code session, `claude --plugin-dir /absolute/path/to/workflows` loads this local plugin.
+Codex discovers `.codex-plugin/plugin.json`; Claude Code discovers `.claude-plugin/plugin.json`. Both describe the same seven skills. This checkout contains no marketplace registration or hooks. Load it through the host's supported local plugin flow. For a temporary Claude Code session, `claude --plugin-dir /absolute/path/to/workflows` loads this local plugin.
 
 A Codex marketplace entry can be created later through the host's plugin management flow when desired. The package does not mutate personal marketplace configuration. Avoid running both a plugin installation and loose copies of its skills in the same host.
 
 ## Verify and update
 
-After installation, start a fresh agent session when needed for discovery and confirm the six selected names and descriptions. Then invoke a selected skill on an appropriate test request and inspect its behavior.
+After installation, start a fresh agent session when needed for discovery and confirm the selected names and descriptions. Then invoke a selected skill on an appropriate test request and inspect its behavior.
 
 Update the installed package through the same route that installed it. Remove a separately installed copy through that route before switching installation methods, so the host discovers only one copy of each skill. No updater here deletes host state or manages installed plugin caches.

@@ -7,7 +7,7 @@ GitHub repository metadata:
 | Field | Value |
 | --- | --- |
 | Name | `workflows` |
-| Description | Portable engineering workflows for Git, reviews, documentation, and HTML artifacts. |
+| Description | Portable engineering workflows for agent orchestration, Git, reviews, documentation, and HTML artifacts. |
 | Topics | `agent-skills`, `workflows`, `git`, `code-review`, `documentation`, `codex`, `claude-code` |
 | License | MIT |
 | Author | Henrique Krause |
