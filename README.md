@@ -2,12 +2,13 @@
 
 The agent owns investigation, decisions, execution and verification. Tools provide evidence and perform operations; their success does not replace the agent’s assessment of the result.
 
-Six portable, instruction-only engineering skills for worktrees, commits, pull requests, reviews, developer documentation, and standalone HTML artifacts. Each skill can be installed independently and uses the host's existing file, Git, and GitHub tools.
+Seven portable, instruction-only engineering skills for agent orchestration, worktrees, commits, pull requests, reviews, developer documentation, and standalone HTML artifacts. Each skill can be installed independently and uses the host's existing file, Git, and GitHub tools.
 
 Workflows gives an agent a focused procedure and concrete completion evidence. It does not initialize project continuity, run lifecycle hooks, or require Harness. Existing host conventions, project structure, and explicit user choices take precedence over its writing and layout defaults.
 
 | Skill | Result |
 | --- | --- |
+| [workflow-orchestrate](skills/workflow-orchestrate/SKILL.md) | Scoped delegation with explicit model choices and minimal context |
 | [workflow-worktree](skills/workflow-worktree/SKILL.md) | A validated worktree plan, checkout, or retirement |
 | [workflow-commit](skills/workflow-commit/SKILL.md) | Cohesive staging groups, commit messages, or requested commits |
 | [workflow-pr](skills/workflow-pr/SKILL.md) | A truthful PR draft or requested publication |

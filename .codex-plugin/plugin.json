@@ -1,7 +1,7 @@
 {
   "name": "workflows",
-  "version": "0.2.0",
-  "description": "Portable engineering workflows for Git, reviews, documentation, and HTML artifacts.",
+  "version": "0.3.0",
+  "description": "Portable engineering workflows for agent orchestration, Git, reviews, documentation, and HTML artifacts.",
   "author": {
     "name": "Henrique Krause",
     "url": "https://github.com/cekrauseee"
@@ -18,8 +18,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Workflows",
-    "shortDescription": "Portable Git, review, and documentation workflows.",
-    "longDescription": "Six focused skills for worktrees, commits, pull requests, read-only reviews, project documentation, and self-contained HTML artifacts. Install together or independently; Harness continuity is optional.",
+    "shortDescription": "Economical agent orchestration and engineering workflows.",
+    "longDescription": "Seven focused skills for economical agent orchestration, worktrees, commits, pull requests, read-only reviews, project documentation, and self-contained HTML artifacts. Install together or independently; Harness continuity is optional.",
     "developerName": "Henrique Krause",
     "category": "Productivity",
     "capabilities": [
