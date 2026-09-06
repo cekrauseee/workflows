@@ -12,13 +12,13 @@ npx skills add cekrauseee/workflows --skill workflow-review --agent codex
 npx skills add cekrauseee/workflows --skill workflow-docs --agent claude-code
 ```
 
-The first command is discovery only. Add `--global` only when you want a user-wide installation; without it, follow the CLI's project-local destination. The CLI can install several selected skills together. It may use network access to obtain its own current package. Repository scripts themselves need only Python 3.10+ and Git where indicated.
+The first command is discovery only. Add `--global` only when you want a user-wide installation; without it, follow the CLI's project-local destination. The CLI can install several selected skills together. It may use network access to obtain its own current package.
 
 ## Independent copy
 
-Copy an entire `skills/workflow-NAME/` directory, including `scripts/`, `references/`, and `agents/`, into the active host's skill directory. For example, a Codex user's skill directory is normally `~/.codex/skills/`, and Claude Code supports `.claude/skills/` in a project. Respect any configured host-specific location instead of hard-coding one into workflows.
+Copy an entire `skills/workflow-NAME/` directory into the active host's skill directory. For example, a Codex user's skill directory is normally `~/.codex/skills/`, and Claude Code supports `.claude/skills/` in a project. Respect any configured host-specific location instead of hard-coding one into Workflows.
 
-Do not copy just `SKILL.md`, and do not merge new files over an unrelated same-named skill. Choose an absent destination or compare the existing installed copy first. Each skill works when copied alone: the PR helper's message validator is bundled beside it, and docs initialization and audit helpers are in the same skill.
+Do not copy just `SKILL.md`, and do not merge new files over an unrelated same-named skill. Choose an absent destination or compare the existing installed copy first. Each skill works when copied alone.
 
 ## Plugin loading
 
@@ -28,6 +28,6 @@ A Codex marketplace entry can be created later through the host's plugin managem
 
 ## Verify and update
 
-After installation, start a fresh agent session when needed for discovery and confirm the six selected names and descriptions. To check an independent copy, run its helper with `--help`; then perform a relevant read-only validation, such as checking a commit message or listing the worktree plan.
+After installation, start a fresh agent session when needed for discovery and confirm the six selected names and descriptions. Then invoke a selected skill on an appropriate test request and inspect its behavior.
 
 Update the installed package through the same route that installed it. Remove a separately installed copy through that route before switching installation methods, so the host discovers only one copy of each skill. No updater here deletes host state or manages installed plugin caches.

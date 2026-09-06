@@ -1,6 +1,8 @@
 # Workflows
 
-Six portable engineering skills for worktrees, commits, pull requests, reviews, developer documentation, and standalone HTML artifacts. Each skill carries its own scripts and references and can be installed independently.
+The agent owns investigation, decisions, execution and verification. Tools provide evidence and perform operations; their success does not replace the agent’s assessment of the result.
+
+Six portable, instruction-only engineering skills for worktrees, commits, pull requests, reviews, developer documentation, and standalone HTML artifacts. Each skill can be installed independently and uses the host's existing file, Git, and GitHub tools.
 
 Workflows gives an agent a focused procedure and concrete completion evidence. It does not initialize project continuity, run lifecycle hooks, or require Harness. Existing host conventions, project structure, and explicit user choices take precedence over its writing and layout defaults.
 
@@ -36,6 +38,6 @@ Use $workflow-docs to update the setup guide after this change.
 
 English and Conventional Commits are preferences. Git-valid host prefixes such as `codex/` work, PR types need not match branch types, and existing PR templates and documentation layouts are preserved. A review remains read-only unless implementation is also requested. HTML is produced only when useful within the requested work.
 
-Read [technical contracts and tests](docs/technical.md), [installation](docs/install.md), and [optional Harness integration](docs/harness-integration.md). [Publication preparation](docs/publication.md) contains repository metadata and release checks; nothing here publishes automatically.
+Read [technical contracts](docs/technical.md) and [installation](docs/install.md). [Publication preparation](docs/publication.md) contains repository metadata and release checks; nothing here publishes automatically.
 
 MIT licensed, copyright 2026 Henrique Krause. See [LICENSE](LICENSE).

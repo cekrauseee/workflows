@@ -33,7 +33,7 @@
         {
           "title": "Engineering choices",
           "paragraphs": [
-            "The skills use small, self-contained procedures instead of a shared runtime or required platform. Bundled Python standard-library helpers validate plans and output structure while leaving authorization and technical judgment to the agent and user.",
+            "Each skill guides the agent’s use of existing Git, file, and review tools. The package contains instructions without a custom runtime or bundled executable scripts. Those instructions define the outcome, relevant decisions, and completion evidence while leaving technical judgment to the agent and user.",
             "Writers preserve existing files and layouts by default. Review findings require concrete evidence, documentation claims are checked against source, and HTML reports keep their essential assets embedded so they can open directly from disk."
           ]
         }
@@ -69,7 +69,7 @@
         {
           "title": "Decisões de engenharia",
           "paragraphs": [
-            "As skills usam procedimentos pequenos e autocontidos, sem runtime compartilhado nem plataforma obrigatória. Utilitários incluídos, feitos apenas com a biblioteca padrão do Python, validam planos e a estrutura dos resultados, enquanto a autorização e o julgamento técnico permanecem com o agente e o usuário.",
+            "Cada skill orienta o agente a usar as ferramentas de Git, arquivos e revisão já disponíveis. O pacote contém instruções, sem runtime próprio ou scripts executáveis incluídos. Essas instruções definem o resultado, as decisões relevantes e as evidências de conclusão, mantendo o julgamento técnico com o agente e o usuário.",
             "Por padrão, os fluxos de escrita preservam arquivos e layouts existentes. As revisões exigem evidências concretas, as afirmações da documentação são conferidas com o código-fonte e os relatórios HTML incorporam seus recursos essenciais para abrir diretamente do disco."
           ]
         }
@@ -105,7 +105,7 @@
         {
           "title": "設計上の選択",
           "paragraphs": [
-            "共通ランタイムや必須プラットフォームではなく、小さく自己完結した手順を採用しました。同梱のPython標準ライブラリ製ヘルパーが計画と出力構造を検証し、実行の許可と技術的な判断はエージェントとユーザーに委ねます。",
+            "各スキルは、既存のGit、ファイル操作、レビューツールを使うための指針をエージェントに提供します。パッケージは独自のランタイムや実行スクリプトを持たず、指示で構成されています。目標、判断すべき点、完了を示す根拠を明確にし、技術的な判断はエージェントとユーザーに委ねます。",
             "書き込みを行うワークフローは、既存のファイルと構成を標準で保持します。レビュー結果には具体的な根拠を求め、ドキュメントの記述はソースと照合し、HTMLレポートは主要な素材を内包するためディスクから直接開けます。"
           ]
         }
