@@ -1,30 +1,45 @@
 ---
-description: "Seis skills independentes para tarefas comuns de entrega de software e documentação."
-metaDescription: "Workflows oferece skills independentes para worktrees Git, commits, pull requests, revisões, documentação para desenvolvedores e artefatos HTML autocontidos."
-summary: "Workflows transforma tarefas recorrentes de engenharia em procedimentos portáteis, com limites claros, conclusão baseada em evidências e sem exigir um framework no projeto."
+description: >-
+  skills para o dia a dia de quem desenvolve software com agentes.
+metaDescription: >-
+  skills independentes para delegar tarefas, trabalhar com git, revisar código,
+  escrever documentação e criar explicações em html com as ferramentas do projeto.
+summary: >-
+  fiz o workflows como um conjunto de skills independentes para delegação,
+  worktrees, commits, pull requests, revisões, documentação e explicações em html.
+  elas orientam as decisões e as verificações de cada tarefa, respeitando
+  as escolhas do projeto e as instruções de quem pediu o trabalho.
 highlights:
-  - "Worktrees Git"
-  - "Commits e pull requests"
-  - "Revisões somente leitura"
-  - "Documentação para desenvolvedores"
-  - "Artefatos HTML"
-  - "Skills independentes"
+  - delegação de tarefas para agentes
+  - worktrees, commits e pull requests
+  - revisões conferidas com o código
+  - documentação e explicações em html
+  - skills que funcionam separadamente
 ---
 
-## Produto
+o workflows reúne skills para tarefas que se repetem no desenvolvimento:
+trabalhar com git, revisar mudanças, escrever documentação e coordenar agentes.
 
-Agentes de engenharia precisam com frequência preparar worktrees, organizar commits, redigir pull requests, revisar mudanças, manter documentação e explicar sistemas visualmente. Workflows reúne essas tarefas em seis skills focadas, que podem ser instaladas e usadas de forma independente.
+separei as instruções em skills para que cada uma possa ser usada sozinha,
+com as ferramentas que o agente já tem. o pacote também cobre pull requests
+e explicações em arquivos html que abrem por conta própria.
 
-Cada skill define as evidências necessárias para concluir sua tarefa e preserva as escolhas existentes no repositório. Prefixos de branches definidos pelo host, instruções do usuário, templates de pull request e estruturas de documentação continuam sendo a referência.
+## deixar claro o que precisa ser feito
 
-## O que construí
+uma revisão precisa apontar um problema concreto no código e explicar o que
+ele afeta. a descrição de uma pull request precisa contar o que mudou e o que
+foi conferido. a documentação precisa corresponder ao funcionamento do projeto.
 
-Construí fluxos independentes para planejar worktrees e verificar seu ciclo de vida, criar commits coesos, redigir pull requests fiéis às mudanças, fazer revisões baseadas em evidências, manter documentação para desenvolvedores e produzir artefatos HTML portáteis.
+as skills deixam essas expectativas claras, mas o agente continua tomando
+as decisões. elas também orientam como passar trabalho para outros agentes:
+escolher um modelo disponível, compartilhar o contexto necessário e respeitar
+as instruções do projeto e de quem pediu o trabalho.
 
-O fluxo de revisão permanece somente leitura, a menos que uma correção também seja solicitada. Commits e publicações continuam sendo ações explícitas, e todas as skills funcionam sem Harness; uma integração opcional e restrita pode acrescentar contexto de continuidade quando Harness já estiver instalado.
+## seguir o jeito de trabalhar do projeto
 
-## Decisões de engenharia
+mantive o pacote só com instruções, sem um programa separado para executá-las.
+as convenções do projeto e as escolhas explícitas do usuário vêm primeiro.
+pedir uma revisão, por exemplo, não é o mesmo que pedir alterações ou publicação.
 
-Cada skill orienta o agente a usar as ferramentas de Git, arquivos e revisão já disponíveis. O pacote contém instruções, sem runtime próprio ou scripts executáveis incluídos. Essas instruções definem o resultado, as decisões relevantes e as evidências de conclusão, mantendo o julgamento técnico com o agente e o usuário.
-
-Por padrão, os fluxos de escrita preservam arquivos e layouts existentes. As revisões exigem evidências concretas, as afirmações da documentação são conferidas com o código-fonte e os relatórios HTML incorporam seus recursos essenciais para abrir diretamente do disco.
+dá para usar o workflows junto do harness. o workflows orienta a tarefa,
+e o harness guarda o contexto para a próxima.
