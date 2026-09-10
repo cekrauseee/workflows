@@ -8,7 +8,7 @@ Workflows gives an agent a focused procedure and concrete completion evidence. I
 
 | Skill | Result |
 | --- | --- |
-| [workflow-orchestrate](skills/workflow-orchestrate/SKILL.md) | Scoped delegation with explicit model choices and minimal context |
+| [workflow-orchestrate](skills/workflow-orchestrate/SKILL.md) | Dedicated coordination with delegated execution and verification. |
 | [workflow-worktree](skills/workflow-worktree/SKILL.md) | A validated worktree plan, checkout, or retirement |
 | [workflow-commit](skills/workflow-commit/SKILL.md) | Cohesive staging groups, commit messages, or requested commits |
 | [workflow-pr](skills/workflow-pr/SKILL.md) | A truthful PR draft or requested publication |

@@ -31,9 +31,9 @@ ele afeta. a descrição de uma pull request precisa contar o que mudou e o que
 foi conferido. a documentação precisa corresponder ao funcionamento do projeto.
 
 as skills deixam essas expectativas claras, mas o agente continua tomando
-as decisões. elas também orientam como passar trabalho para outros agentes:
-escolher um modelo disponível, compartilhar o contexto necessário e respeitar
-as instruções do projeto e de quem pediu o trabalho.
+as decisões. quando peço orquestração, o coordenador define o resultado,
+distribui o trabalho e avalia as evidências. outros agentes cuidam da execução
+e da verificação. sem esse pedido, o agente trabalha diretamente.
 
 ## seguir o jeito de trabalhar do projeto
 

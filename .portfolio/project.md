@@ -34,9 +34,9 @@ affects. a pull request description should tell someone what changed and what
 was checked. documentation should match how the project actually works.
 
 the skills give the agent those expectations while leaving room to make
-decisions. they also cover handing work to other agents: choosing an available
-model, sharing the context they need, keeping edits separate, and checking
-what comes back.
+decisions. when i ask for orchestration, the coordinator defines the result,
+assigns the work, and assesses the evidence. other agents handle implementation
+and verification. without that request, the agent works directly.
 
 ## fitting the way you work
 
