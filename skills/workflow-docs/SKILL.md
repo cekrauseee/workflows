@@ -1,14 +1,12 @@
 ---
 name: workflow-docs
-description: Create, maintain, or audit developer documentation while preserving the project's existing structure and verifying claims against source.
+description: Create or update developer documentation, or audit its accuracy and organization within a requested scope.
 ---
 
 # Documentation
 
-Inspect the current documentation layout, repository instructions, generators, and relevant source before deciding what belongs where. Preserve existing locations, templates, navigation, and language unless the request includes a migration.
+Start with the requested page, topic or audit scope. Reuse current context. Inspect layout when placement is unclear, generators when the target is generated, and source or configuration when a claim needs verification. A local edit does not require surveying the documentation tree.
 
-For new documentation, create only the files the project needs. For updates, change the narrowest canonical explanation and affected links or examples. For audits, check navigation, local links, duplicated guidance, and claims against source, configuration, and tests. An audit request is read-only.
+Change the canonical explanation and affected links or examples. Preserve locations, templates and language unless restructuring is part of the request. Create only files with a distinct purpose. An audit remains read-only and checks the requested dimensions, such as accuracy, navigation or duplication.
 
-Use concise English by default while honoring user and project choices. Keep one canonical explanation and link to it. Do not invent commands, architecture, behavior, or verification. Run the project's documentation checks when relevant and report any material validation gap.
-
-If the project uses an installed Harness, follow its current coordination instructions when relevant. Do not initialize Harness or assume its commands or state format.
+Use concise English by default while honoring user and project choices. Do not invent commands or evidence. Verify affected references and use applicable documentation checks when the change warrants them; reuse current results and report material gaps.

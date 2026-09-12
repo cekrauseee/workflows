@@ -1,14 +1,14 @@
 ---
 name: workflow-worktree
-description: Plan, create, adopt, and safely retire isolated Git worktrees using the host or repository's branch and storage conventions.
+description: Create, adopt or retire Git worktrees, or prepare a requested worktree plan.
 ---
 
 # Worktree
 
-Inspect repository instructions, status, refs, the intended base, and registered worktrees. Preserve an explicit branch or path choice. Otherwise follow host and repository conventions and use a short task name. Validate branch syntax, ref collisions, base resolution, and existing checkouts with native Git before creating or adopting a worktree.
+Use the checks needed for the requested operation and reuse current host evidence. Preserve an explicit branch or path; otherwise follow host and repository conventions. A plan is read-only.
 
-Use host worktree support when available, or Git directly. Before editing, confirm the repository identity, registered path, branch, and starting commit. For adoption, also inspect divergence and existing work. Never force past a collision or silently adopt an unrelated branch.
+For creation, establish the base and destination and check branch or checkout collisions with native Git or host support. For adoption, also inspect existing changes and divergence. Confirm the resulting repository, registered path, branch and starting commit from reliable operation results or a targeted check. Never silently adopt unrelated work or force past a collision.
 
-Before an authorized retirement, inspect staged, unstaged, untracked, ignored, and unmerged work. Do not force removal of a checkout containing work. Worktree removal and branch deletion are separate actions. Report the path, branch, base, and verification performed.
+For authorized retirement, inspect changes, untracked or ignored user files and commits that could be lost. Disposable build output does not itself prevent removal. Preserve meaningful work and do not force its deletion. Worktree removal does not authorize branch deletion.
 
-If the project uses an installed Harness, follow its current coordination instructions when relevant. Do not initialize Harness or use Harness state as worktree storage.
+Use native tools rather than a separate storage system. Report the resulting path and branch, or the remaining obstacle.

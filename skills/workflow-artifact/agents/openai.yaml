@@ -1,4 +1,4 @@
 interface:
   display_name: "HTML artifact"
-  short_description: "Create portable HTML explanations and reports"
+  short_description: "Deliver a standalone HTML explanation or report"
   default_prompt: "Use $workflow-artifact to create a self-contained HTML explanation."

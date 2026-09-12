@@ -1,4 +1,4 @@
 interface:
   display_name: "Review"
-  short_description: "Review changes with evidence-backed findings"
+  short_description: "Assess changes against the requested criteria"
   default_prompt: "Use $workflow-review to inspect this diff for actionable defects."

@@ -1,4 +1,4 @@
 interface:
   display_name: "Worktree"
-  short_description: "Plan and verify portable Git worktrees"
+  short_description: "Create, adopt or retire a Git worktree"
   default_prompt: "Use $workflow-worktree to prepare an isolated checkout for this task."
