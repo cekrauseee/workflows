@@ -1,6 +1,6 @@
 {
   "name": "workflows",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Portable engineering workflows for agent orchestration, Git, reviews, documentation, and HTML artifacts.",
   "author": {
     "name": "Henrique Krause",

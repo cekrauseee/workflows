@@ -1,14 +1,12 @@
 ---
 name: workflow-artifact
-description: Create and check standalone self-contained HTML explanations, maps, comparisons, and reports when a file artifact is requested or useful within the authorized task.
+description: Produce a standalone HTML explanation or report when the requested deliverable needs that file format.
 ---
 
 # HTML artifact
 
-Create a finished HTML explanation or report at an explicit destination when that format helps the requested work. Base the content on verified evidence and adapt the design to the audience, project, and user request. Do not turn an application prototype into a static report.
+Create the requested HTML deliverable at a suitable explicit path, honoring a supplied destination. A conversational explanation does not itself require a file. Preserve an application prototype's intended behavior rather than converting it to a static report.
 
-For a self-contained artifact, embed the CSS, essential JavaScript, data, fonts, and images needed at runtime. Use semantic structure, the correct document language, useful text alternatives, keyboard access, visible focus, and reduced motion where applicable. Preserve existing files unless replacing them is within the requested scope.
+For a self-contained file, embed the CSS, essential JavaScript, data and runtime assets. Keep structure, language and accessibility appropriate to the audience, including keyboard access and reduced motion for interactive content. Preserve existing files outside the replacement scope.
 
-Inspect the final file and its referenced assets. Verify factual content and use proportionate browser or visual checks when authorized and useful. Link it from existing project documentation only when it belongs there. Return the final file and report material checks that were not performed.
-
-If the project uses an installed Harness, follow its current coordination instructions when relevant. Do not initialize Harness or assume its commands or state format.
+Verify the content and required assets. Use browser or visual checks when authorized and relevant. Return the file with material verification limits. Add a documentation link only when the artifact belongs in the project.

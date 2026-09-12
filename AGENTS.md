@@ -1,11 +1,13 @@
 # Workflows contributor guidance
 
-Workflows contains independently installable, instruction-only engineering skills. It does not own project continuity, hooks, agent configuration, or executable workflow tooling.
+Workflows contains independently installable, instruction-only engineering skills. The host owns execution tools and permissions; Harness, when configured, owns persistent project knowledge and coordination.
 
-- Keep each published skill self-contained within its own directory.
-- Treat writing and layout preferences as advisory unless the user/project requires them.
-- Do not couple host branch prefixes, commit types, or PR types.
-- Keep review-only requests read-only and optional Harness integration optional.
-- Write repository documentation and commit/PR content in concise English; use Conventional Commits unless an explicit choice says otherwise.
+- Keep each skill self-contained and preserve distinct task boundaries.
+- Include only guidance that changes a relevant decision or protects a concrete requirement. Reuse current context and evidence. Keep operational guidance independent of model names.
+- Writing and layout defaults yield to user and project choices. Keep branch prefixes, commit types and PR types independent.
+- Keep repository documentation and commit/PR content in concise English, using Conventional Commits unless explicitly directed otherwise.
+- Maintain one canonical explanation. Review-only work stays read-only; browser and visual QA remain opt-in.
 
-Validate every skill and the plugin manifest with available host validators, inspect both plugin manifests for alignment, and run `npx skills add . --list` before publication. Browser and visual QA are opt-in. Do not commit, push, publish, or alter user installations without the relevant request.
+For prose changes, review scope, clarity and affected links. For changed skill or manifest metadata, use available host validators and check the affected inventory. For behavioral changes, evaluate relevant realistic requests rather than asserting exact wording. Reuse adequate checks and do not add a test framework for prose.
+
+Verify discovery and selected-skill installation in disposable destinations when package structure or installation behavior changes. Before publication, validate the full skill inventory and aligned manifests. Commits, pushes, publication and changes to user installations require their corresponding authorization; do not ask again when already granted.

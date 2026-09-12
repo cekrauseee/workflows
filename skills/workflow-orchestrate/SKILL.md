@@ -1,50 +1,30 @@
 ---
 name: workflow-orchestrate
-description: Coordinate explicitly requested subagent work as a dedicated orchestrator, with model selection, minimal context, and delegated verification. Use when the user requests orchestration or delegation, or to continue an authorized agent team.
+description: Coordinate explicitly requested delegation or continue an authorized agent team.
 ---
 
 # Orchestrate
 
-Use orchestration when the user requests it, including in natural language, or when continuing an already authorized team. Otherwise execute directly; task size or available concurrency alone does not activate delegation.
+Orchestrate only when requested or when continuing an authorized team. The coordinator owns the overall objective, task boundaries, priorities, dependencies and acceptance of delivered outcomes. Workers own technical investigation, implementation decisions, execution, integration, verification and fixes. Do not perform those activities alongside workers or audit their implementation after delivery.
 
-## Keep the coordinator role
+## Assign complete outcomes
 
-During requested orchestration, the coordinator owns the objective, acceptance criteria, decomposition, assignments, cross-scope decisions, and final acceptance. Delegate operational discovery, implementation, integration, tests, review, and fixes. Read governing instructions and the context needed to make decisions, but do not conduct a parallel implementation or routine code investigation. Remain in this role through delivery unless the user explicitly asks for shared execution or changes the arrangement.
+Give each worker a coherent outcome with the context needed to understand it: expected behavior, scope, relevant references, confirmed constraints and what to return. Use concrete examples to resolve ambiguity. Pass mandatory technical constraints or existing interfaces when relevant, but leave the implementation approach, code structure, tools and test selection to the worker.
 
-Responsibility for delivery does not require personally performing or repeating the workers' work. Assign small tasks whole to one worker rather than taking them over or manufacturing parallel work. Available concurrency is a ceiling, not a target. Waiting for a meaningful result is appropriate when no coordination decision is pending.
+For a worker that needs clearer reasoning boundaries, narrow the problem and clarify the desired behavior. Do not compensate with a technical plan that leaves the worker only edits and tool calls. Let the worker investigate technical unknowns as part of the assignment. Avoid both vague objectives and unrelated history.
 
-## Select capability and context
+For example: "Add a CSV export of the currently filtered results. Preserve existing filtering and follow the project's export conventions. Handle implementation and relevant checks. Return the resulting behavior, affected files and any remaining limitation."
 
-Choose the model and reasoning effort explicitly for each assignment when the host supports it, honoring user choices and available models. Prefer an economical model with low effort for narrow discovery, medium effort for scoped implementation, and higher effort for difficult logic or ambiguity. Reserve premium models for a concrete need; do not inherit the coordinator's expensive model merely by omission. These are task-based defaults, not a requirement to try an unsuitable model first. Keep model identifiers and personal defaults in host configuration rather than making this skill depend on one provider.
+Use the user's model and cost constraints when selecting workers. Configure model and reasoning effort explicitly when supported; account for history defaults that inherit the coordinator's settings. Prefer fresh, scoped context and follow the host's spawn schema. Keep model identifiers and personal preferences in host configuration.
 
-Prefer a fresh context with a self-contained assignment. Include the objective, relevant paths and evidence, applicable restrictions, write ownership, completion criteria, and expected output. Include essential authorization and tool boundaries even when the host also propagates them. Pass references to necessary material instead of copying unrelated history. Use limited history only when earlier decisions materially affect the assignment; use full history only when that benefit justifies its cost and inheritance behavior.
+Each worker executes its assignment directly unless further delegation is explicitly assigned. Keep write scopes non-overlapping and concurrency within the user's authorization. Reuse a worker for related follow-up. Assign integration to a worker when multiple outputs need to work together.
 
-Check the available spawn schema: some hosts couple full-history forks to the parent's model and effort and reject overrides. When supported, use `fork_turns: "none"` with explicit `model` and `reasoning_effort` for an independently configured worker. If the host cannot select the requested capability, disclose the limitation and adapt within the authorized scope rather than silently substituting a premium agent.
+## Manage and accept
 
-## Assign complete units
+Request a concise outcome, relevant deliverable or file references, a verification summary when applicable, and remaining issues. Trust the worker's result as the normal basis for acceptance. Assess whether the requested outcome was delivered and contributes to the overall goal; technical proof is not a second coordinator deliverable. A smaller worker model does not by itself justify extra scrutiny.
 
-Give each worker a coherent result, including its relevant checks, and keep write scopes non-overlapping. Avoid splitting a short sequence across a scout, implementer, and tester when one worker can complete it. Keep discovery read-only unless implementation is assigned.
+Do not request tool-call transcripts, raw logs, exhaustive diffs or repeated checks to gain confidence in the worker. If the result is missing, contradictory or functionally incomplete, describe the specific outcome gap and return it to a worker. Technical diagnosis and verification remain with that worker. Assign any explicitly required technical review to a worker rather than performing it yourself or adding review layers by default.
 
-Workers execute directly by default. Tell leaf agents: "Complete this assignment directly. Do not spawn other agents; your parent's delegation instructions apply only to your parent." Allow further delegation only when explicitly assigned and justified within the shared concurrency budget.
+Wait for meaningful results when no management decision is pending. Resolve scope questions and dependencies without maintaining a parallel implementation. If delegation is unavailable, report the limitation; remain in the coordinator role until the user changes the arrangement.
 
-Assign integration and its relevant checks to a worker when work spans multiple assignments. The coordinator resolves interface and scope decisions; the integration worker performs the changes and checks. Do not duplicate assigned investigation, implementation, or verification.
-
-## Communicate and finish
-
-Request a concise result: outcome, changed files or precise evidence, checks performed, and unresolved issues. Keep necessary details accessible through file references; do not request execution diaries or raw logs. Agents may send relevant findings directly to a dependent teammate; avoid broadcasts and repeated coordinator relays. Report changes that affect scope or ownership to the coordinator before acting on them.
-
-Reuse an existing agent for follow-up on the same scope when its context remains useful. Wait for meaningful results rather than repeatedly polling unchanged state. Keep user updates focused on progress, decisions, and blockers.
-
-Escalate when evidence shows missing capability, unresolved ambiguity, or a failed approach. Clarify or reassign the work rather than silently taking over execution. If delegation is unavailable, report the limitation and retain the coordinator role until the user changes it. Carry forward the diagnosis and useful results; do not restart blindly or retry the same approach indefinitely. Resolve missing requirements with the user when necessary rather than treating every blocker as a model problem.
-
-## Accept results without repeating execution
-
-Define observable acceptance criteria and required verification in the assignment. Workers return the outcome, concise evidence against those criteria, checks actually performed, and remaining limitations. A bare completion claim is insufficient; request the missing evidence from the responsible worker.
-
-Assess whether the result meets the objective and whether the evidence is coherent and sufficient. Do not routinely read full diffs, inspect tool-call histories, request raw logs, or rerun checks to audit a worker. Delegate a targeted investigation when a concrete gap, contradiction, failure, or unresolved material risk could change acceptance.
-
-When the user requests code review or applicable instructions require it, assign a separate read-only reviewer. Decide which findings require action and return them to an implementation worker, including small fixes. Delegate verification of affected behavior after fixes; do not perform a second review of the reviewer's work. Keep required review distinct from routine worker verification rather than adding a reviewer to every assignment.
-
-Stop when acceptance criteria and required checks are satisfied. Broaden verification only for new failures or unresolved material uncertainty. Assess efficiency by total work through accepted delivery, including coordination and rework, rather than agent count or latency alone. Report measured usage only when available; do not invent savings.
-
-Delegation grants no additional permission for commits, publication, external messages, or other actions. If an installed Harness is already in use, follow its scoped recall and writer ownership procedures; do not initialize it or duplicate its state in messages. Keep transient coordination in agent messages and genuine continuation needs in current handoffs.
+Finish when the overall objective is met and known outcome gaps are resolved. Report the result and material limitations without claiming unverified success. Delegation grants no additional execution permissions. Follow applicable project ownership and continuity rules without duplicating their state.

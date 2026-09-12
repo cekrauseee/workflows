@@ -1,14 +1,14 @@
 ---
 name: workflow-review
-description: Review code, documentation, commits, or pull requests read-only for concrete defects, with evidence-backed findings and clear severity.
+description: Review proposed changes for concrete defects, or assess code and documentation against explicitly requested review criteria.
 ---
 
 # Review
 
-Establish the comparison base, reviewed revision, intended behavior, and applicable repository rules. Inspect every changed file in scope, then read callers, tests, and data boundaries needed to verify behavior.
+Establish the requested scope and criteria. For a change review, identify the revision and comparison base, inspect all changed files in scope, and follow dependencies needed to assess behavior. Reuse current evidence; a focused request does not require reviewing unrelated changes.
 
-Report only defects with a reachable trigger, concrete impact, and precise file and line evidence. Use P0 for catastrophic blockers, P1 for urgent major defects, P2 for ordinary correctness or reliability defects, and P3 for localized low-risk defects. Omit style preferences and unsupported suspicions.
+For correctness findings, identify a reachable trigger, concrete impact and precise file and line evidence. Use the host's severity scheme when required; otherwise P0 means catastrophic, P1 urgent, P2 ordinary correctness or reliability, and P3 localized low risk. Separate defects from recommendations in a requested design, structure or documentation assessment.
 
-List findings by severity with a concise correction direction. If there are none, say no actionable findings were found and identify material unreviewed or untested areas. Do not claim that no bugs exist.
+Report actionable findings with a correction direction. If none are found, say so without implying that unexamined behavior is correct. Include material verification gaps.
 
-A review request is read-only. It does not authorize fixes, commits, remote comments, approvals, or requested-changes state. If the project uses an installed Harness, follow its current read-only coordination instructions when relevant; do not initialize it or acquire write ownership.
+Review is read-only unless the request also includes implementation. It does not authorize commits, remote comments, approvals or requested-changes state.

@@ -1,4 +1,4 @@
 interface:
   display_name: "Orchestrate"
-  short_description: "Delegate execution and accept evidenced results"
-  default_prompt: "Use $workflow-orchestrate to coordinate this work, delegating execution and verification while retaining decisions and result acceptance."
+  short_description: "Delegate outcomes and manage their delivery"
+  default_prompt: "Use $workflow-orchestrate to delegate complete outcomes, leave technical execution to the workers and assess the overall result."

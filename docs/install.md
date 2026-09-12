@@ -1,10 +1,8 @@
 # Installation
 
-Install from `cekrauseee/workflows` or a local source directory. The repository includes Codex and Claude plugin manifests plus ordinary skill directories; use one installation route per agent to avoid duplicate discovery.
+Use one installation route per host to avoid duplicate discovery. Each `skills/<name>/` directory contains its instructions and host metadata and works independently.
 
 ## Skills CLI
-
-List the public package before selecting skills; use `.` in place of `cekrauseee/workflows` for a local checkout:
 
 ```bash
 npx skills add cekrauseee/workflows --list
@@ -12,22 +10,14 @@ npx skills add cekrauseee/workflows --skill workflow-review --agent codex
 npx skills add cekrauseee/workflows --skill workflow-docs --agent claude-code
 ```
 
-The first command is discovery only. Add `--global` only when you want a user-wide installation; without it, follow the CLI's project-local destination. The CLI can install several selected skills together. It may use network access to obtain its own current package.
+Use `.` instead of the repository name for a local checkout. Add `--global` for user-wide installation; otherwise use the CLI's project-local destination. The CLI may obtain its own package through the network.
 
-## Independent copy
+## Independent copy or plugin
 
-Copy an entire `skills/workflow-NAME/` directory into the active host's skill directory. For example, a Codex user's skill directory is normally `~/.codex/skills/`, and Claude Code supports `.claude/skills/` in a project. Respect any configured host-specific location instead of hard-coding one into Workflows.
+Copy the complete selected skill directory into the host's configured skill location. Compare an existing same-named copy before replacing it; do not merge over unrelated content.
 
-Do not copy just `SKILL.md`, and do not merge new files over an unrelated same-named skill. Choose an absent destination or compare the existing installed copy first. Each skill works when copied alone.
-
-## Plugin loading
-
-Codex discovers `.codex-plugin/plugin.json`; Claude Code discovers `.claude-plugin/plugin.json`. Both describe the same seven skills. This checkout contains no marketplace registration or hooks. Load it through the host's supported local plugin flow. For a temporary Claude Code session, `claude --plugin-dir /absolute/path/to/workflows` loads this local plugin.
-
-A Codex marketplace entry can be created later through the host's plugin management flow when desired. The package does not mutate personal marketplace configuration. Avoid running both a plugin installation and loose copies of its skills in the same host.
+The Codex and Claude manifests expose the same inventory through each host's plugin loader. For a temporary Claude Code session, `claude --plugin-dir /absolute/path/to/workflows` loads the local package. Use the host's supported plugin flow for Codex. This repository does not configure personal marketplaces or hooks.
 
 ## Verify and update
 
-After installation, start a fresh agent session when needed for discovery and confirm the selected names and descriptions. Then invoke a selected skill on an appropriate test request and inspect its behavior.
-
-Update the installed package through the same route that installed it. Remove a separately installed copy through that route before switching installation methods, so the host discovers only one copy of each skill. No updater here deletes host state or manages installed plugin caches.
+Confirm the selected names are discovered, refreshing the session when needed. Check an affected workflow when its behavior changed. Update through the route used for installation; when switching routes, remove the previous installation through its owning mechanism so only one copy is discovered. [Contributor guidance](../AGENTS.md) defines package verification.
