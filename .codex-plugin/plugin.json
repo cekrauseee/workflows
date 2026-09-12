@@ -1,6 +1,6 @@
 {
   "name": "workflows",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Portable engineering workflows for agent orchestration, Git, reviews, documentation, and HTML artifacts.",
   "author": {
     "name": "Henrique Krause",
@@ -19,7 +19,7 @@
   "interface": {
     "displayName": "Workflows",
     "shortDescription": "Economical agent orchestration and engineering workflows.",
-    "longDescription": "Seven focused skills for economical agent orchestration, worktrees, commits, pull requests, read-only reviews, project documentation, and self-contained HTML artifacts. Install together or independently; Harness continuity is optional.",
+    "longDescription": "Seven focused skills for economical agent orchestration, worktrees, commits, pull requests, read-only reviews, project documentation, and self-contained HTML artifacts. Install together or independently; Continuity environments are optional.",
     "developerName": "Henrique Krause",
     "category": "Productivity",
     "capabilities": [
