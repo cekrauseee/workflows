@@ -3,46 +3,65 @@ slug: workflows
 name: cekrause/workflows
 repositoryUrl: https://github.com/cekrauseee/workflows
 description: >-
-  skills for the everyday work of building software with agents.
+  clear outcomes for everyday development work with agents.
 metaDescription: >-
-  independent agent skills for delegation, git, code review, documentation,
-  and html explanations, using tools already available in the project.
+  seven independent skills for delegation, git, reviews, documentation, and html
+  deliverables, with scoped context and technical autonomy for workers.
 summary: >-
-  i built workflows as independent skills for agent delegation, worktrees,
-  commits, pull requests, reviews, documentation, and html explanations.
-  they describe the decisions and checks each task needs while respecting
-  the project and the user's instructions.
+  i built workflows to make recurring engineering tasks clear without scripting
+  every action. seven independent skills cover delegation, worktrees, commits,
+  pull requests, reviews, documentation, and html deliverables. workers own the
+  technical work; coordinators manage the outcomes.
 highlights:
-  - "focused agent delegation"
+  - "delegation through complete outcomes"
   - "worktrees, commits, and pull requests"
-  - "reviews checked against the code"
-  - "documentation and html explanations"
-  - "skills that work independently"
+  - "reviews within the requested scope"
+  - "documentation and standalone html deliverables"
+  - "independent skills using existing tools"
 ---
 
-workflows is a set of skills for recurring development tasks: working with
-git, reviewing changes, writing documentation, and coordinating agents.
+workflows is a set of skills for the development tasks i kept coming back to:
+git operations, reviews, documentation, and coordinating agents. i separated
+them so an agent can load the procedure it needs without taking on every
+other workflow at the same time.
 
-i put the instructions into separate skills so each one can be used on its
-own, with the tools the agent already has. the package also covers pull
-requests and standalone html explanations.
+the package contains seven independent skills and uses the host's existing
+tools. there is no separate runtime, required model, or bundled execution script.
 
-## making the task clear
+## make the outcome clear
 
-a review should point to a concrete problem in the code and explain what it
-affects. a pull request description should tell someone what changed and what
-was checked. documentation should match how the project actually works.
+a commit should group a coherent change. a pull request should explain the
+problem, the resulting behavior, and what was checked. a review should follow
+the requested criteria and connect its findings to evidence. documentation
+should match how the project actually works.
 
-the skills give the agent those expectations while leaving room to make
-decisions. when i ask for orchestration, the coordinator defines the result,
-assigns the work, and assesses the evidence. other agents handle implementation
-and verification. without that request, the agent works directly.
+the instructions focus on those results. a wording change to a pull request
+doesn't need a fresh investigation of the repository. current context and
+relevant verification can be reused, with more inspection when a real gap
+needs to be resolved.
 
-## fitting the way you work
+## delegate the whole task
 
-i kept the package as instructions, with no separate runtime. existing project
-conventions and your explicit choices come first. asking for a review, for
-example, doesn't also mean asking for edits or publication.
+when i ask for orchestration, the coordinator defines outcomes, assigns work,
+manages dependencies, and checks whether the delivered result meets the goal.
+workers own investigation, implementation choices, integration, checks, and fixes.
 
-workflows can be used alongside harness. workflows guides the task; harness
-keeps the project context available for the next one.
+a handoff explains the expected behavior, boundaries, and necessary context.
+it leaves technical decisions with the worker instead of turning the assignment
+into a list of edits. the coordinator can return an incomplete result with a
+clear description of what is missing, without reconstructing every tool call.
+
+model choices follow the request and the capability the work needs. delegation
+is explicit; without it, the agent works directly. the coordinator stays in its
+management role while the workers execute.
+
+## fit the project
+
+project conventions and explicit user choices come first. a request for a
+review doesn't also authorize edits or publication. an html file is created
+when that is the requested deliverable, and checks stay relevant to the work.
+
+workflows can be used alongside continuity. continuity groups related projects
+in shared environments and keeps knowledge and contributions available.
+workflows handles the execution procedure; it doesn't create those environments
+or turn shared context into an instruction to read every project.

@@ -1,6 +1,6 @@
 # Workflows contributor guidance
 
-Workflows contains independently installable, instruction-only engineering skills. The host owns execution tools and permissions; Harness, when configured, owns persistent project knowledge and coordination.
+Workflows contains independently installable, instruction-only engineering skills. The host owns execution tools and permissions; Continuity, when configured, owns persistent project knowledge and coordination.
 
 - Keep each skill self-contained and preserve distinct task boundaries.
 - Include only guidance that changes a relevant decision or protects a concrete requirement. Reuse current context and evidence. Keep operational guidance independent of model names.

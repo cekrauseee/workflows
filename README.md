@@ -22,7 +22,7 @@ Select only the skills and host you need. See [installation](docs/install.md) fo
 
 Ask for the desired outcome or invoke a skill directly, such as `Use $workflow-pr to draft a description for this branch.` Skills reuse current context and verification. User and project instructions govern scope, language and execution permissions.
 
-Harness is optional. A project's existing host instruction controls when its knowledge or coordination is needed; invoking Workflows does not start a Harness lifecycle. Workflows contains no Harness commands or state model.
+[Continuity](https://github.com/cekrauseee/harness#environments) is optional. It groups project folders and repositories in shared environments for knowledge and contributions. Workflows owns the execution procedure and task boundaries; it does not create environments, infer project membership or manage their storage. The host's configured integration selects relevant context when needed. A shared environment does not require a workflow to inspect every member project.
 
 The Codex and Claude manifests describe the same skill inventory and package version. Contributor and verification requirements are in [AGENTS.md](AGENTS.md). Publication and user installation updates are separate requested actions.
 
