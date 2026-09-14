@@ -1,66 +1,41 @@
 ---
 description: >-
-  objetivos claros para o trabalho de desenvolvimento com agentes.
+  Skills independentes para orientar tarefas de engenharia e distribuir
+  responsabilidades entre agentes.
 metaDescription: >-
-  sete skills independentes para delegação, git, revisões, documentação e entregas
-  em html, com contexto delimitado e autonomia técnica para quem executa.
+  Desenvolvi o Workflows para organizar tarefas recorrentes de engenharia em
+  procedimentos com objetivos, limites e critérios de conclusão explícitos.
 summary: >-
-  fiz o workflows para deixar tarefas recorrentes de engenharia claras sem
-  prescrever cada ação. sete skills independentes cobrem delegação, worktrees,
-  commits, pull requests, revisões, documentação e entregas em html.
-  os agentes executores cuidam do trabalho técnico; o coordenador gerencia os resultados.
+  Desenvolvi o Workflows para organizar tarefas recorrentes de engenharia em
+  procedimentos com objetivos, limites e critérios de conclusão explícitos. O
+  projeto reúne sete skills para orquestração, worktrees, commits, pull requests,
+  revisões, documentação e entregas em HTML. Cada uma pode ser instalada e
+  utilizada de forma independente.
 highlights:
-  - delegação de objetivos completos
-  - worktrees, commits e pull requests
-  - revisões dentro do escopo pedido
-  - documentação e entregas independentes em html
-  - skills independentes com as ferramentas existentes
+  - sete skills para orquestração, worktrees, commits, pull requests, revisões, documentação e entregas em HTML
+  - objetivos, limites e critérios de conclusão explícitos
+  - responsabilidade sobre a tarefa completa
+  - execução independente de cada skill
 ---
 
-o workflows reúne skills para tarefas às quais eu sempre voltava no
-desenvolvimento: operações com git, revisões, documentação e coordenação de
-agentes. separei as instruções para que o agente possa carregar o procedimento
-necessário sem assumir todos os outros fluxos ao mesmo tempo.
+Desenvolvi o Workflows para organizar tarefas recorrentes de engenharia em procedimentos com objetivos, limites e critérios de conclusão explícitos.
 
-o pacote tem sete skills independentes e usa as ferramentas do aplicativo.
-não depende de um modelo específico, de um programa de execução próprio ou
-de scripts incluídos no pacote.
+O projeto reúne sete skills para orquestração, worktrees, commits, pull requests, revisões, documentação e entregas em HTML. Cada uma pode ser instalada e utilizada de forma independente.
 
-## deixar o resultado claro
+## Procedimentos com limites definidos
 
-um commit deve reunir uma mudança coerente. uma pull request deve explicar
-o problema, o comportamento resultante e o que foi conferido. uma revisão
-segue os critérios pedidos e relaciona os apontamentos a evidências.
-a documentação deve corresponder ao funcionamento do projeto.
+Cada skill orienta as decisões relevantes para uma tarefa. Uma revisão deve seguir os critérios pedidos e relacionar os apontamentos a evidências. Uma pull request precisa explicar o problema, o comportamento resultante e a verificação realizada. Um commit deve reunir uma mudança coerente.
 
-as instruções se concentram nesses resultados. ajustar o texto de uma pull
-request não exige investigar o repositório outra vez. contexto e verificações
-atuais podem ser reaproveitados, com novas consultas quando falta algo relevante.
+As instruções também permitem reaproveitar contexto e verificações que continuam válidos. A investigação é ampliada quando falta informação relevante para executar ou concluir o trabalho.
 
-## delegar a tarefa inteira
+O pacote é composto por instruções e metadados, sem runtime, scripts de execução ou hooks próprios. A execução utiliza as ferramentas e permissões do ambiente em que as skills foram instaladas.
 
-quando peço orquestração, o coordenador define os objetivos, distribui o
-trabalho, gerencia dependências e confere se o resultado entregue atende ao
-pedido. os executores cuidam da investigação, das decisões de implementação,
-da integração, das verificações e das correções.
+## Responsabilidade sobre a tarefa completa
 
-o handoff explica o comportamento esperado, os limites e o contexto necessário.
-as decisões técnicas ficam com quem executa, em vez de transformar a tarefa
-numa lista de edições. se algo estiver incompleto, o coordenador descreve o que
-falta e devolve a tarefa, sem reconstruir cada chamada de ferramenta.
+Na orquestração, o coordenador define objetivos, distribui o trabalho, resolve dependências e avalia se os resultados atendem ao pedido. Os executores assumem a investigação, as decisões técnicas, a implementação, a integração e a verificação.
 
-a escolha de modelo respeita o pedido e a capacidade necessária. a delegação
-é explícita; sem ela, o agente trabalha diretamente. enquanto os executores
-trabalham, o coordenador permanece no papel de gerenciar os resultados.
+Cada atribuição deve fornecer o comportamento esperado, os limites e o contexto necessário. Quando uma entrega está incompleta, o coordenador descreve o que falta e devolve a tarefa ao executor responsável.
 
-## respeitar o projeto
+Essa divisão mantém a responsabilidade técnica com quem executa. O coordenador acompanha os resultados e as dependências entre tarefas, enquanto o executor conduz o trabalho até sua conclusão.
 
-as convenções do projeto e as escolhas explícitas do usuário vêm primeiro.
-pedir uma revisão não autoriza também alterações ou publicação. um arquivo
-html é criado quando faz parte da entrega pedida, e as verificações ficam
-restritas ao que importa para o trabalho.
-
-o workflows pode ser usado com o continuity, que reúne projetos relacionados
-em ambientes compartilhados e mantém o conhecimento e as contribuições.
-o workflows cuida do procedimento de execução; não cria esses ambientes nem
-transforma o contexto compartilhado numa obrigação de ler todos os projetos.
+O Workflows pode ser combinado com o Continuity: um orienta os procedimentos de execução; o outro mantém conhecimento e contribuições disponíveis entre tarefas e projetos.
