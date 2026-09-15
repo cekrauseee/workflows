@@ -3,65 +3,41 @@ slug: workflows
 name: cekrause/workflows
 repositoryUrl: https://github.com/cekrauseee/workflows
 description: >-
-  clear outcomes for everyday development work with agents.
+  Independent skills for engineering tasks and delegation between agents.
 metaDescription: >-
-  seven independent skills for delegation, git, reviews, documentation, and html
-  deliverables, with scoped context and technical autonomy for workers.
+  Workflows organizes recurring engineering tasks into procedures with explicit
+  goals, boundaries, and completion criteria.
 summary: >-
-  i built workflows to make recurring engineering tasks clear without scripting
-  every action. seven independent skills cover delegation, worktrees, commits,
-  pull requests, reviews, documentation, and html deliverables. workers own the
-  technical work; coordinators manage the outcomes.
+  I developed Workflows to organize recurring engineering tasks into
+  procedures with explicit goals, boundaries, and completion criteria. The
+  project includes seven skills covering orchestration, worktrees, commits,
+  pull requests, reviews, documentation, and HTML deliverables. Each can be
+  installed and used independently.
 highlights:
-  - "delegation through complete outcomes"
-  - "worktrees, commits, and pull requests"
-  - "reviews within the requested scope"
-  - "documentation and standalone html deliverables"
-  - "independent skills using existing tools"
+  - seven skills covering orchestration, worktrees, commits, pull requests, reviews, documentation, and HTML deliverables
+  - procedures with explicit goals, boundaries, and completion criteria
+  - responsibility for the whole task
+  - independently installed and used
 ---
 
-workflows is a set of skills for the development tasks i kept coming back to:
-git operations, reviews, documentation, and coordinating agents. i separated
-them so an agent can load the procedure it needs without taking on every
-other workflow at the same time.
+I developed Workflows to organize recurring engineering tasks into procedures with explicit goals, boundaries, and completion criteria.
 
-the package contains seven independent skills and uses the host's existing
-tools. there is no separate runtime, required model, or bundled execution script.
+The project includes seven skills covering orchestration, worktrees, commits, pull requests, reviews, documentation, and HTML deliverables. Each can be installed and used independently.
 
-## make the outcome clear
+## Procedures with defined boundaries
 
-a commit should group a coherent change. a pull request should explain the
-problem, the resulting behavior, and what was checked. a review should follow
-the requested criteria and connect its findings to evidence. documentation
-should match how the project actually works.
+Each skill guides the decisions that matter for a particular task. A review should follow the requested criteria and connect its findings to evidence. A pull request should explain the problem, the resulting behavior, and the verification performed. A commit should bring together a coherent change.
 
-the instructions focus on those results. a wording change to a pull request
-doesn't need a fresh investigation of the repository. current context and
-relevant verification can be reused, with more inspection when a real gap
-needs to be resolved.
+The instructions also allow existing context and verification to be reused while they remain valid. Further investigation is called for when relevant information is missing.
 
-## delegate the whole task
+The package consists of instructions and metadata, with no dedicated runtime, execution scripts, or hooks. Execution uses the tools and permissions of the environment where the skills are installed.
 
-when i ask for orchestration, the coordinator defines outcomes, assigns work,
-manages dependencies, and checks whether the delivered result meets the goal.
-workers own investigation, implementation choices, integration, checks, and fixes.
+## Responsibility for the whole task
 
-a handoff explains the expected behavior, boundaries, and necessary context.
-it leaves technical decisions with the worker instead of turning the assignment
-into a list of edits. the coordinator can return an incomplete result with a
-clear description of what is missing, without reconstructing every tool call.
+During orchestration, the coordinator defines objectives, assigns work, resolves dependencies, and assesses whether the results meet the request. Workers own investigation, technical decisions, implementation, integration, and verification.
 
-model choices follow the request and the capability the work needs. delegation
-is explicit; without it, the agent works directly. the coordinator stays in its
-management role while the workers execute.
+Each assignment should provide the expected behavior, boundaries, and necessary context. When a delivery is incomplete, the coordinator describes what is missing and returns the task to the responsible worker.
 
-## fit the project
+This keeps technical responsibility with the agent doing the work. The coordinator manages outcomes and dependencies, while the worker carries the task through to completion.
 
-project conventions and explicit user choices come first. a request for a
-review doesn't also authorize edits or publication. an html file is created
-when that is the requested deliverable, and checks stay relevant to the work.
-
-workflows can be used alongside continuity. continuity groups related projects
-in shared environments and keeps knowledge and contributions available.
-workflows handles the execution procedure; it doesn't create those environments
-or turn shared context into an instruction to read every project.
+Workflows can be used alongside Continuity: one guides execution procedures; the other keeps knowledge and contributions available across tasks and projects.
