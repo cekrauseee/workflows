@@ -1,5 +1,6 @@
 ---
 slug: workflows
+portfolioIndex: 2
 name: cekrause/workflows
 repositoryUrl: https://github.com/cekrauseee/workflows
 description: >-
